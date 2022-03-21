@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- info :titre affiché lors résultat d'une recherche -->
+    <title>FS HTML Cours</title>
+    <!-- logo du site -->
+    <link
+      rel="shortcut icon"
+      href="./favicon/Lezardon logo.jpg"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="description affichée par le moteur de recherche"
+    />
+  </head>
+  <body>
+    <!-- emmet : h1+nav>ul>li*3>a -->
+    <h1>Première page</h1>
+    <!-- exposant -->
+    <p>nombre<sup>exposant</sup></p>
+    <br />
+    <!-- indice -->
+    texte<sub>indice</sub>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://htmlcheatsheet.com" target="_blank"
+            >html sheet cheat</a
+          >
+        </li>
+        <li>
+          <a href="https://www.toptal.com/designers/htmlarrows/" target="_blank"
+            >Icones HTML</a
+          >
+        </li>
+        <li>&#10146; pointeur flèche</li>
+      </ul>
+    </nav>
+    <!-- table>(thead>tr>th*3)+(tbody>tr*4>td*3)+(tfoot>tr>td*3) -->
+    <table>
+      <caption>
+        Icones utiles issues du site lien
+        <strong>Icones Utiles</strong>
+      </caption>
+      <thead>
+        <tr>
+          <th>Icone</th>
+          <th>Valeur</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A commercial</td>
+          <td>&#64;</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Yen</td>
+          <td>&yen;</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Bonhomme de neige</td>
+          <td>&#9731;</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Esperluette</td>
+          <td>&amp;</td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <h2>Formulaires</h2>
+    <form action="">
+      <!-- input texte -->
+      <label for="firstinput">First Input</label>
+      <input type="text" id="firstinput" placeholder="firstinput" />
+      <!-- input number -->
+      <label for="firstcounter">First Input</label>
+      <input type="number" name="" id="firstcounter" min="1" step="2" />
+      <!-- input select -->
+      <label for="choix">Choix</label>
+      <select name="" id="choix">
+        <option value="choix1" selected>choix 1</option>
+        <option value="choix2">choix 2</option>
+        <option value="choix3">choix 3</option>
+      </select>
+      <!-- input radio -->
+      <label for="radio1">Bouton 1</label>
+      <input type="radio" name="radio" id="radio1" checked />
+      <label for="radio2">Bouton 2</label>
+      <input type="radio" name="radio" id="radio2" />
+      <label for="radio3">Bouton 3</label>
+      <input type="radio" name="radio" id="radio3" />
+      <!-- text area -->
+      <label for="txtarea">Zone de texte</label>
+      <textarea
+        name=""
+        id="txtarea"
+        cols="30"
+        rows="10"
+        placeholder="Entrez votre message"
+      ></textarea>
+      <!-- check box -->
+      <label><input type="checkbox" name="" id="" />Boite à cocher</label>
+      <!-- input submit -->
+      <input type="submit" value="Valider" />
+    </form>
+    <hr />
+    <footer>
+      <a href="mailto:">Envoyer un message</a>
+      <a href="./README.md" download="README"
+        >Telechargement du fichier README.md</a
+      >
+    </footer>
+  </body>
+</html>
